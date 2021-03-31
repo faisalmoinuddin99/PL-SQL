@@ -1,52 +1,27 @@
--- BLOCKS in PL/SQL
+-- Variables in PL/SQL
 
 /*
-PL/SQL is a block-structured language where
-statements are organised in the form of blocks.
+? These are named ‘storage locations’ and store values of a
+particular type.
 
-The following are the two types of blocks:
-1. Named block
-2. Anonymous block
+? Before using a variable, it has to be declared in the
+declaration section.
 
-A code block can have the following three sections:
-1. Declaration (optional)
-2. Execution (mandatory)
-3. Exception (optional)
+The syntax used is as follows:
+variable_name datatype [NOT NULL] [:= expression];
+
+Notes:
+The local variable name should start with l_ and that of the global
+variable should start with g_.
 */
 
-        Declaration Section
+DECLARE
   
-  Begin 
-        
-        Execution Section
-      
-      Exception 
-        
-        Exception Section
-  End ;
-  
-  /*
-  
-  NAMED Block --
-  
+  user_name VARCHAR2(20) DEFAULT 'Salman Khan';
+  last_name   VARCHAR2(20) := user_name ;
+BEGIN
 
-# These blocks have mandatory headers or labels in the declaration section.
-
-# They can either be subprograms, such as functions, packages, or
-triggers*.
-
-# They are stored in the Oracle database server and can be used
-later
   
-  Anonymous blocks --
+  DBMS_OUTPUT.PUT_LINE(last_name);
   
-# These blocks do not have headers in the declaration section.
-
-# They do not form the body of a function, trigger or any procedure.
-
-# They are for one-time use and are not stored/saved in the Oracle
-Database Server.
-
-# Anonymous blocks are mostly used during debugging.
-  
-  */
+  END;
