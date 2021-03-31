@@ -41,5 +41,16 @@
 5. SIGNTYPE: Three values -1, 0 or 1 that are useful for tri-state logic programming
 
 6. SIMPLE_INTEGER: PLS_INTEGER values with a NOT NULL constraint
+
+
+****** BOOLEAN data type ******
+
+This data type has the following three possible values :
+
+1. TRUE
+
+2. FALSE
+
+3. NULL
                 
 */
