@@ -52,5 +52,14 @@ This data type has the following three possible values :
 2. FALSE
 
 3. NULL
+
+
+****** Character data type ******
+
+This type has the following two data types:
+
+1. CHAR(n)
+
+2. VARCHAR2(n)
                 
 */
