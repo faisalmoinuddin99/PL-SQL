@@ -27,5 +27,19 @@
 
 # PLS_INteGER data type is more space-optimised.
 
+
+# The following are the subtypes of numeric type:
+
+1. NATURAL: Non-negative PLS_INTEGER values
+
+2. NATURALN: Non-negative PLS_INTEGER values with a NOT NULL constraint
+
+3. POSITIVE: Positive PLS_INTEGER values
+
+4. POSITIVEN: Positive PLS_INTEGER value with a NOT NULL constraint
+
+5. SIGNTYPE: Three values -1, 0 or 1 that are useful for tri-state logic programming
+
+6. SIMPLE_INTEGER: PLS_INTEGER values with a NOT NULL constraint
                 
 */
