@@ -77,4 +77,12 @@ This type has the following six data types:
 
 Detailed reference : https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG238
 
+
+The data type synonyms are presented in the following table:
+
+Data Type                     Synonyms
+NUMBER               DEC, DECIMAL, DOUBLE PRECISION,FLOAT, INTEGER, INT, NUMERIC, REAL,SMALLINT
+CHAR                 CHARACTER, STRING
+VARCHAR2             VARCHAR
+
 */
