@@ -24,3 +24,29 @@ A code block can have the following three sections:
         
         Exception Section
   End ;
+  
+  /*
+  
+  NAMED Block --
+  
+
+# These blocks have mandatory headers or labels in the declaration section.
+
+# They can either be subprograms, such as functions, packages, or
+triggers*.
+
+# They are stored in the Oracle database server and can be used
+later
+  
+  Anonymous blocks --
+  
+# These blocks do not have headers in the declaration section.
+
+# They do not form the body of a function, trigger or any procedure.
+
+# They are for one-time use and are not stored/saved in the Oracle
+Database Server.
+
+# Anonymous blocks are mostly used during debugging.
+  
+  */
