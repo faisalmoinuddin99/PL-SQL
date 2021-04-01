@@ -21,7 +21,23 @@ DECLARE
   last_name   VARCHAR2(20) := user_name ;
 BEGIN
 
+  user_name := 'Messi' ;
+  DBMS_OUTPUT.PUT_LINE(last_name); -- Salman Khan
+  DBMS_OUTPUT.PUT_LINE(user_name); --Messi
   
+  last_name := 'Neymar';
   DBMS_OUTPUT.PUT_LINE(last_name);
   
-  END;
+END ;
+
+Declare
+
+  a PLS_Integer := 10;
+  b PLS_Integer  := 20;
+  c PLS_Integer ;
+  
+Begin
+  c := a * b;
+  DBMS_OUTPUT.PUT_Line('Multiplcation of a * b is :' || c);
+  
+END ;
