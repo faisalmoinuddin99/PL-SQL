@@ -23,4 +23,4 @@ if (a > b) then
 dbms_output.put_line('value of a is :' || a);
 end if;
 dbms_output.put_line('value of b is :' || b);
-end ;
+END ;
