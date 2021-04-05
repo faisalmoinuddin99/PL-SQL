@@ -1,39 +1,25 @@
-
-
 /*
+Conditional Hands-On Exercise
 
-Like the IF statement, the CASE statement selects one sequence of statements to execute.
-However, to select the sequence, the CASE statement uses a selector rather than multiple Boolean expressions.
-A selector is an expression, the value of which is used to select one of several alternatives.
+Set the release date of the movie and using conditionals find out its status.
+A movie can have one of the following Status:
 
-Syntax
-The syntax for the case statement in PL/SQL is ?
-
-CASE selector 
-   WHEN 'value1' THEN S1; 
-   WHEN 'value2' THEN S2; 
-   WHEN 'value3' THEN S3; 
-   ... 
-   ELSE Sn;  -- default case 
-END CASE;
+1. PLANNED: In Case the movie is yet to be released.
+2. RELEASED: In Case the movie has been released.
+3. BLOCKED: In all other cases.
 */
 
-SET SERVEROUTPUT ON 
+DECLARE
+
+ movieReleasedDate VARCHAR(20) := '24 Mar';
  
-
-DECLARE 
-
-
-  Grade CHAR(1) := 'V' ;
-
 BEGIN 
-  CASE Grade
-    WHEN 'A' then dbms_output.put_line('Excellent');
-    WHEN 'B' then dbms_output.put_line('Good') ;
-    WHEN 'C' then dbms_output.put_line('Average') ;
-    WHEN 'D' then dbms_output.put_line('Just Passed') ;
-    WHEN 'F' then dbms_output.put_line('Fail') ;
+  CASE movieReleasedDate
+    WHEN '22 Mar' then dbms_output.put_line('Planned');
+    WHEN '24 Mar' then dbms_output.put_line('Released');
+    WHEN '25 Mar' then dbms_output.put_line('Blocked') ;
     
-    else dbms_output.put_line('No such Grade ');
+    else dbms_output.put_line('No Date Found !');
   END CASE;
 END ;
+ 
