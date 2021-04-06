@@ -1,25 +1,33 @@
 /*
-Conditional Hands-On Exercise
+LOOP Statement: 
 
-Set the release date of the movie and using conditionals find out its status.
-A movie can have one of the following Status:
+The LOOP statement involves repeating a block of code until the 
+condition is satisfied
+The LOOP statement
 
-1. PLANNED: In Case the movie is yet to be released.
-2. RELEASED: In Case the movie has been released.
-3. BLOCKED: In all other cases.
+The syntax used is as follows:
+
+[label] LOOP
+ statements;
+END LOOP [loop_label];
+*** The EXIT statement can be used to terminate the loop at any 
+time.
+
+When to use the LOOP statement:
+1. When the body of a loop is to be executed at least once
+
+The FOR LOOP statement involves repeating a block of code 
+until the condition is satisfied.
+The FOR LOOP statement
+The syntax used is as follows:
+
+FOR index IN start .. end LOOP 
+ statements; 
+END LOOP;
+
+Notes:
+1. The index is an local variable and cannot be used outside FOR 
+LOOP.
+2. Both start and end in a FOR LOOP statement are integers
+
 */
-
-DECLARE
-
- movieReleasedDate VARCHAR(20) := '24 Mar';
- 
-BEGIN 
-  CASE movieReleasedDate
-    WHEN '22 Mar' then dbms_output.put_line('Planned');
-    WHEN '24 Mar' then dbms_output.put_line('Released');
-    WHEN '25 Mar' then dbms_output.put_line('Blocked') ;
-    
-    else dbms_output.put_line('No Date Found !');
-  END CASE;
-END ;
- 
