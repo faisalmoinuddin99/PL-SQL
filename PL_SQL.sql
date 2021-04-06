@@ -26,3 +26,29 @@ END ;
 5 * 9 = 45
 5 * 10 = 50
 */
+
+
+-- Reverse For Loop
+
+DECLARE 
+  a number(2) ;
+
+BEGIN
+  FOR a IN Reverse 10 .. 20 LOOP
+    dbms_output.put_line(a) ;
+  END LOOP ;
+END ;
+
+/*
+20
+19
+18
+17
+16
+15
+14
+13
+12
+11
+10
+*/
