@@ -1,33 +1,28 @@
+-- Multiplication table of 5
+
+SET SERVEROUTPUT ON
+
+Declare 
+
+  table_of_five number(2) := 5 ;
+
+Begin
+  
+  FOR a in 1 .. 10 LOOP
+    DBMS_OUTPUT.PUT_LINE('5 * ' ||a || ' = '  || table_of_five * a ) ;
+    
+  END LOOP ;
+END ;
+
 /*
-LOOP Statement: 
-
-The LOOP statement involves repeating a block of code until the 
-condition is satisfied
-The LOOP statement
-
-The syntax used is as follows:
-
-[label] LOOP
- statements;
-END LOOP [loop_label];
-*** The EXIT statement can be used to terminate the loop at any 
-time.
-
-When to use the LOOP statement:
-1. When the body of a loop is to be executed at least once
-
-The FOR LOOP statement involves repeating a block of code 
-until the condition is satisfied.
-The FOR LOOP statement
-The syntax used is as follows:
-
-FOR index IN start .. end LOOP 
- statements; 
-END LOOP;
-
-Notes:
-1. The index is an local variable and cannot be used outside FOR 
-LOOP.
-2. Both start and end in a FOR LOOP statement are integers
-
+5 * 1 = 5
+5 * 2 = 10
+5 * 3 = 15
+5 * 4 = 20
+5 * 5 = 25
+5 * 6 = 30
+5 * 7 = 35
+5 * 8 = 40
+5 * 9 = 45
+5 * 10 = 50
 */
