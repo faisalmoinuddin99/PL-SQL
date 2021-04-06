@@ -1,4 +1,4 @@
--- Print all the number which are divisible by 2 and 3 between 1 nd 100
+  -- Print all the number which are divisible by 2 and 3 between 1 nd 100
 
 Declare 
   a number(3) ;
@@ -29,3 +29,32 @@ Divisible by 2 and 3: 84
 Divisible by 2 and 3: 90
 Divisible by 2 and 3: 96
 */
+
+declare 
+x pls_integer;
+begin
+for x in 1..100 loop
+if(x mod 3 = 0) then
+dbms_output.put_line('value of x is :' || x );
+end if;
+end loop;
+end;
+
+
+
+declare 
+x pls_integer;
+
+
+begin
+for x in 1..100 loop
+if(x mod 3 = 0 and x mod 2 = 0) then
+dbms_output.put_line('value of x is : ' || x );
+end if;
+end loop;
+end;
+
+
+
+
+
